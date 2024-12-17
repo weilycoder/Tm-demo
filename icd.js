@@ -28,7 +28,7 @@
     }
   }
 
-  function onCtrlPress(event) {
+  function run(event) {
     if (timeoutId) {
       clearTimeout(timeoutId);
       timeoutId = null;
@@ -43,5 +43,5 @@
     }, 100);
   }
 
-  document.body.onmousedown = onCtrlPress;
+  document.body.onmousedown = run;
 })();
